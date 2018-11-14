@@ -1,0 +1,54 @@
+@media screen  and (min-width:976px ){
+	.sa{
+		display: inline-block;
+		height: 300px !important;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 975px) and (min-width:576px){
+	.sa{
+		display: inline-block;
+		height: 300px !important;
+		overflow: hidden;
+	}
+}
+@media screen  and (max-width:575px ){
+	.sa{
+		display: inline-block;
+		height: 200px !important;
+		overflow: hidden;
+	}
+	.d-flex{
+		flex-wrap: wrap;
+	}
+	.d-flex>div{
+		width: 420px !important;
+		margin: 2rem;
+	}
+}
+.d-flex{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.mrl{
+	margin: 5rem 1rem;
+}
+.text{
+	text-align: center;
+}
+.bg-hei{
+	background: #000000;
+}
+.bg-white{
+	background: #fff;
+}
+.font-size{
+	font-size: 18px;
+}
+.text-hui{
+	color:gray;
+}
+.m{
+	margin: 0.3rem;
+}

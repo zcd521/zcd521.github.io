@@ -1,0 +1,46 @@
+@media screen  and (min-width:976px ){
+	.sa{
+		display: inline-block;
+		height: 300px !important;
+		overflow: hidden;
+	}
+	
+}
+@media screen and (max-width: 975px) and (min-width:750px){
+	.sa{
+		display: inline-block;
+		height: 300px !important;
+		overflow: hidden;
+	}
+}
+@media screen  and (max-width:749px ){
+	.sa{
+		display: inline-block;
+		height: 200px !important;
+		overflow: hidden;
+	}
+	.size{
+		display: none;
+	}
+}
+.bg-hei{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+}
+.text{
+	width: 80%;
+	margin: 2rem auto;
+	border: 1px solid red;
+}
+.text-bai{
+	text-align: center;
+	color:#fff;
+	margin: .5rem;
+}
+.size{
+	font-size: 50px;
+}
+.img{
+	width: 100%;
+}

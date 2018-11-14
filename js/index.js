@@ -1,18 +1,45 @@
-//设置函数
-function task(){
-	//把查找到的选择器传给img
-	var img=baine_img.querySelector(".bai_img");
-	
-	img.className="";
-	var next=img.nextElementSibling;
-	if(next!=null){
-		next.className="bai_img";
-	}
-	else{
-		img.parentNode.children[0].className="bai_img";
-	}
-}
-var timer=setInterval(task,6000);
+$(function(){
+	var $imgs = $("#baine_img");
+	var $btnl = $(".btn_left");
+	var $btnr = $(".btn_right");
+	var i=0;
+	//获取定义none元素
+	var $img = $(".baine_img>li")
+	$btnr.on('click',function(){
+		if(i != $img.length){
+			i++;
+			$img.eq(i).css("display","block")
+			.siblings().css("display","none");
+		}else{
+			i=0;
+			$img.eq(i).css("display","block")
+			.siblings().css("display","none");
+			}
+		})
+	$btnl.on('click',function(){
+		if(i != 0){
+			i--;
+			$img.eq(i).css("display","block")
+			.siblings().css("display","none");
+		}else{
+			i = $img.length;
+			$img.eq(i).css("display","block")
+			.siblings().css("display","none");
+		}
+	})
+	setInterval(function(){
+		if(i != $img.length){
+			i++;
+			$img.eq(i).css("display","block")
+			.siblings().css("display","none");
+		}else{
+			i=0;
+			$img.eq(i).css("display","block")
+			.siblings().css("display","none");
+		}
+	},5000)
+})
+
 //鼠标滚动事件
  window.onscroll=function(){
     var scrollTop=document.documentElement.scrollTop;
@@ -22,9 +49,12 @@ var timer=setInterval(task,6000);
        p2.style.display="block";
     } if(scrollTop>=500){
        img_r.style.display="block";
-    }  if(scrollTop>=1000){
+    }  if(scrollTop>=750){
        p3.style.display="block";
-    } if(scrollTop>=1200){
-       p4.style.display="block";
+    } else if(scrollTop>=700){
+      p0.style.display="block";
     }
 }
+ 
+
+

@@ -1,0 +1,114 @@
+*{padding: 0;margin: 0;}
+h1,h2,h3,h4,h5,h6,ul{padding: 0;margin: 0;}
+ul{list-style: none;}
+a{text-decoration: none !important;color: white;}
+h3,b{font-weight: 100;}
+li{list-style: none;}
+.color{width: 100%;background: #000000;}
+.img{width: 100%;}
+@media screen  and (min-width:976px ){
+	.nav{position: relative;}
+	.top{
+		height: 8rem;
+		position: absolute;
+		top:0;
+		z-index: 1;
+	}
+	.top>.top_logo>img{
+        width: 9rem;
+        margin-left: 7.5rem;
+    }
+    .top_nav {
+		display: flex;
+    	align-self: center;
+    	margin: 0 auto;
+    }
+    div.top_nav>.nav_fold{display: none;}
+    .top_nav>ul.fold>li{
+		display: inline-block;
+		padding: 1rem 2rem;
+	}
+	.top_nav>ul.fold>li:hover{background: white;}
+    .top_nav>ul.fold>li:hover a{color:#000;}
+    .footer{
+		width: 1100px;
+	}
+	.footer_l>div>p{
+		width: 40%;
+		margin-top: 0.5rem;
+	}
+	.footer_l>div{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}	
+@media screen and (max-width: 975px){
+    .top{
+    	height: 4rem;
+    	background: #000;
+    	position: fixed;
+    	z-index: 10;
+    }
+    .top>div.top_logo img{width: 8rem;}
+    .top_nav>.fold{display: none;}
+  	.top_nav:hover ul{width: 100%;height: 100%;background: #000;position: fixed;
+		top:3.7rem;left: 0;display: block;}
+	
+  	.top_nav ul.fold li{margin: 2rem 3rem;border-bottom:1px solid gray;}
+  	.top_nav>ul.fold>li:hover a{color:gray;}
+ }
+ @media screen and (max-width: 975px) and (min-width:576px){
+	.top_nav>.nav_fold>img{
+  		width: 4rem;
+  		height: 4rem;
+  		margin: auto 0;
+		display: block;
+	}
+	.footer{
+		width: 100%;
+	}
+}
+@media screen  and (max-width:575px ){
+	.top>.top_logo>img{width: 7rem;}
+    .top_nav{
+    	height: 2.5rem;
+		margin: auto 0;
+    }
+    .top_nav>.nav_fold>img{
+  		width: 2.3rem;
+  		height: 2.3rem;
+  		margin: auto 0;
+		display: block;
+	}
+}
+/*导航栏*/
+.nav{width: 100%;}
+.top{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.top_logo{margin: auto 0;}
+.footer{
+	color:white;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+}
+.footer_l{
+	width: 70%;
+	margin-left: 2rem;
+}
+.footer_l>a{font-size: 20px;}
+.but{
+	text-align: center;
+	color: white;
+}
+iframe{
+	width: 100%;
+	border:0;
+	height: 200px;
+}
+.none{display: none;}
+/*导航栏*/
